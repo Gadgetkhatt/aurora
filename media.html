@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" rel="stylesheet">
+  <title>Media</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #3c3c3c;
+    }
+
+    table {
+      font-family: arial, helvetica, sans-serif;
+      width: 100%;
+      color: #FF00FF;
+    }
+
+    .About {
+      position: relative;
+      top: 125px;
+      margin-left: 3%;
+    }
+
+    img {
+      min*-width: 100%;
+      min*-height: 100%;
+      display: block;
+      object-fit: cover
+    }
+
+    container-fluid {
+      margin-left: auto;
+    }
+
+    iframe {
+      margin-bottom: 50px;
+    }
+
+    /*gallery*/
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+      padding: 0px 0px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 120px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%;
+      /* IE10 */
+      flex: 25%;
+      max-width: 45%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-image: url("img/starrybg.jpg");
+      min-height: 75%;
+    }
+  </style>
+</head>
+
+<body class="bgimg">
+  <!--Media-->
+  <div class="About">
+    <h1 style="color:#FAEBD7; font-size: 50px;"> Media </h1>
+  </div>
+
+  <!-- Photo Grid-->
+  <div class="row">
+    <div class="column">
+      <a href="img/lightbox/media01.jpg" data-lightbox="image-1" data-title="MGMT"><img src="img/media01.jpg" alt="MGMT" style="width:100%"></a>
+      <a href="img/lightbox/media09.jpg" data-lightbox="image-1" data-title="MGMT"><img src="img/media09.jpg" alt="MGMT" style="width:100%"></a>
+      <a href="img/lightbox/media03.jpg" data-lightbox="image-1" data-title="MGMT"><img src="img/media03.jpg" alt="MGMT" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <a href="img/lightbox/media05.jpg" data-lightbox="image-1" data-title="MGMT"><img src="img/media05.jpg" alt="MGMT" style="width:100%"></a>
+      <a href="img/lightbox/media02.jpg" data-lightbox="image-1" data-title="MGMT"><img src="img/media02.jpg" alt="MGMT" style="width:100%"></a>
+      <a href="img/lightbox/media04.jpg" data-lightbox="image-1" data-title="MGMT"><img src="img/media04.jpg" alt="MGMT" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <a href="img/lightbox/media07.jpg" data-lightbox="image-1" data-title="MGMT"><img src="img/media07.jpg" alt="MGMT" style="width:100%"></a>
+      <a href="img/lightbox/media08.jpg" data-lightbox="image-1" data-title="MGMT"><img src="img/media08.jpg" alt="MGMT" style="width:100%"></a>
+      <a href="img/lightbox/media06.jpg" data-lightbox="image-1" data-title="MGMT"><img src="img/media06.jpg" alt="MGMT" style="width:100%"></a>
+    </div>
+  </div>
+
+  <!--Videos-->
+  <div class="About">
+    <h1 style="color:#FAEBD7; font-size: 50px;"> Videos </h1>
+  </div>
+
+  <!--Video-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/MmZexg8sxyk"></iframe> </div>
+      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/tmozGmGoJuw"></iframe> </div>
+      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/rtL5oMyBHPs"></iframe> </div>
+      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/cB7IAXrCkO8"></iframe> </div>
+    </div>
+  </div>
+
+  <!--header-->
+  <div class="header" id="myHeader">
+    <h2>My Header</h2>
+  </div>
+
+  <!-- Hamburger menu -->
+  <nav>
+    <span onclick="openNav()">
+      <div class="hamburgerBun">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+    </span>
+  </nav>
+
+  <!-- The navigation overlay -->
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content" onlick="openNav()">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="discography.html">DISCOGRAPHY</a>
+      <a href="merchandise.html">MERCHANDISE</a>
+      <a href="tour.html">TOUR</a>
+      <a href="media.html">MEDIA</a>
+    </div>
+  </div>
+
+  <!--hamburger bar-->
+  <script>
+    /* Open */
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    /* Close */
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+
+  <!--lightbox-->
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

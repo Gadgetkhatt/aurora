@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" rel="stylesheet">
+  <title>Discography</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: white;
+    }
+    p{
+      color:black;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px;
+      top: 130px;
+      position: relative;
+    }
+
+    /* Style the header */
+    .header {
+      opacity: 0.6;
+      padding: 30px 16px;
+      color: black;
+      background: black;
+      width: 100%;
+      top: 0;
+      position: fixed;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- GRIDS -->
+  <div class="disco">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><a href="img/album4.jpg"data-lightbox="image-1" data-title="Congratulations album"><img src="img/congratulations.png"></img></a><p>Congratulations / 2009</p><p>9 songs, 43 minutes</p></div>
+        <div class="col-md-4"><a href="img/album3.jpg"data-lightbox="image-1" data-title="MGMT Album"><img src="img/mgmt_record.png"></img></a><p>MGMT / 2013</p><p>10 songs, 44 minutes</p></div>
+        <div class="col-md-4"><a href="img/album2.jpg"data-lightbox="image-1" data-title="Little Dark Age Album"><img src="img/littledarkage.png"></img></a><p>Little Dark Age / 2018</p><p>10 songs, 44 minutes</p></div>
+        <div class="col-md-4 col-md-offset-4"><a href="img/album1.jpg"data-lightbox="image-1" data-title="Oracular Spectacular Album"><img src="img/oracularspectacular.png"></img></a><p>Oracular Spectacular / 2007</p><p>10 songs, 40 minutes</p></div>
+      </div>
+    </div>
+  </div>
+
+<!--header-->
+  <div class="header" id="myHeader">
+    <h2>My Header</h2>
+  </div>
+
+  <!-- Hamburger menu -->
+  <nav>
+    <span onclick="openNav()">
+      <div class="hamburgerBun">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+    </span>
+  </nav>
+
+  <!-- The navigation overlay -->
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content" onlick="openNav()">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="discography.html">DISCOGRAPHY</a>
+      <a href="merchandise.html">MERCHANDISE</a>
+      <a href="tour.html">TOUR</a>
+      <a href="media.html">MEDIA</a>
+    </div>
+  </div>
+
+
+  <script>
+    /* Open */
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    /* Close */
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+
+
+
+  <!--lightbox-->
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
