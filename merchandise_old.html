@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Merchandise</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: white;
+    }
+
+    p{
+      color: black;
+    }
+
+    .filterDiv {
+
+      float: left;
+      color: #ffffff;
+      width: 470px;
+      line-height: 10px;
+
+      text-align: center;
+      margin: 0px;
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .container {
+      margin-top: 0px;
+      overflow: hidden;
+    }
+
+    /* Style the buttons */
+    .btn {
+      border: none;
+      font-size: 17px;
+      outline: none;
+      padding: 12px 16px;
+      background-color: white;
+      cursor: pointer;
+      border-radius: 0 !important;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+
+    .container-fluid div {
+
+      background-color: white;
+    }
+
+    .container-fluid-1 div {
+      padding: 0px;
+    }
+  </style>
+
+<body>
+
+
+
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('apparel')"> Apparel</button>
+    <button class="btn" onclick="filterSelection('music')"> Music</button>
+    <button class="btn" onclick="filterSelection('posters')"> Posters</button>
+    <button class="btn" onclick="filterSelection('accessories')"> Accessories</button>
+  </div>
+
+  <div class="merch">
+    <div class="container-fluid">
+      <div class="filterDiv apparel"><a href="productpage_dragon.html"><img class="img-responsive" src="img/shirt01.jpg"></a><p>Girl's Dragon t-shirt</p><p>$25.00</p><p style="color:white;">Out of Stock</p></div>
+      <div class="filterDiv apparel"><a href="productpage_opart_fall.html"><img class="img-responsive" src="img/shirt02.jpg"></a><p>Girl's Op-Art Fall 2013 Tour T-shirt</p><p>$25.00</p><p style="color:white;">Out of Stock</p></div>
+      <div class="filterDiv music"><img class="img-responsive" src="img/record01.jpg"><p>Oracular Spectacular Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      <div class="filterDiv music"><img class="img-responsive" src="img/record02.jpg"><p>MGMT Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      <div class="filterDiv music"><img class="img-responsive" src="img/record03.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      <div class="filterDiv music"><img class="img-responsive" src="img/record04.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      <div class="filterDiv posters"><img class="img-responsive" src="img/poster02.jpg"><p>MGMT 2013 Poster Bundle</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      <div class="filterDiv posters"><img class="img-responsive" src="img/poster04.jpg"><p>Heart Sweat shirt</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories01.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories02.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories03.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      </div>
+  </div>
+
+  <!--header-->
+    <div class="header" id="myHeader">
+      <h2>My Header</h2>
+    </div>
+
+
+  <!-- Hamburger menu   -->
+  <nav>
+    <span onclick="openNav()">
+      <div class="hamburgerBun">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+    </span>
+  </nav>
+
+  <!-- The navigation overlay -->
+  <div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <!-- TOOD: Move this link if this works! -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- Overlay content -->
+
+<!-- TODO: new hamburger!
+    <div class="container-fluid overlay-content">
+      <div class="row">
+        <div class="col-md-12"><a href="javascript:void(0)" onclick="closeNav()">&times;</a></div>
+        <div class="col-md-12"><a href="index.html">HOME</a></div>
+        <div class="col-md-12"><a href="index.html">HOME</a></div>
+        <div class="col-md-12"><a href="index.html">HOME</a></div>
+        <div class="col-md-12"><a href="index.html">HOME</a></div>
+        <div class="col-md-12"><a href="index.html">HOME</a></div>
+  -->
+
+            <div class="overlay-content" onlick="openNav()">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="discography.html">DISCOGRAPHY</a>
+                <a href="merchandise.html">MERCHANDISE</a>
+                <a href="tour.html">TOUR</a>
+                <a href="media.html">MEDIA</a>
+            </div>
+
+        <script>
+          /* Open */
+          function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+          }
+
+          /* Close */
+          function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+          }
+        </script>
+
+
+
+  <script>
+    filterSelection("all")
+
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
