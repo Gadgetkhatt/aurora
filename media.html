@@ -17,6 +17,18 @@
 
 <!-- Any special styles for this particular section of the website. -->
 <style>
+/*jumbotron*/
+.jumbotron {
+  display: table;
+  height: 50vh;
+  width: 100%;
+  margin: auto;
+  background: url(img/media.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 0 !important;
+  min-height: 400px;
+}
+
   img {
     min*-width: 100%;
     min*-height: 100%;
@@ -97,13 +109,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="Media.html">Media</a>
           </li>
           <li class="nav-item">
@@ -121,9 +133,11 @@
 
   <!-- put all main content in here -->
   <div class="mainContentContainer">
-    <!--Media-->
-    <div class="About">
-      <h1 style="color:black; font-size: 40px;"> Media Gallery </h1>
+
+    <div class="jumbotron jumbotron-fluid bgimage">
+      <div class="container-fluid">
+        <h1>Media Gallery</h1>
+      </div>
     </div>
 
     <!-- Photo Grid-->

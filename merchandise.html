@@ -10,19 +10,21 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Aurora</title>
+  <title>Aurora-Merchandise</title>
 </head>
 
 <!-- Any special styles for this particular section of the website. -->
 <style>
-
   /*jumbotron*/
   .jumbotron {
-  background-image: url("img/merchheader.jpg");
-  background-size: cover;
-  height: 100%;
-  border-radius: 0 !important;
-  min-height: 400px;
+    display: table;
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    background: url(img/merchheader.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    border-radius: 0 !important;
+    min-height: 400px;
   }
 
   .filterDiv {
@@ -30,7 +32,6 @@
     color: #ffffff;
     width: 470px;
     line-height: 10px;
-
     text-align: center;
     margin: 0px;
     display: none;
@@ -66,7 +67,6 @@
   }
 
   .container-fluid div {
-
     background-color: white;
   }
 
@@ -83,7 +83,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -93,7 +93,7 @@
             <a class="nav-link" href="Media.html">Media</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="merchandise.html">Merchandise</a>
+            <a class="nav-link active" href="merchandise.html">Merchandise</a>
           </li>
            <li class="nav-item">
             <a class="nav-link" href="tour.html">Tours</a>
@@ -108,82 +108,84 @@
   <!-- put all main content in here -->
   <div class="mainContentContainer">
     <!-- GRIDS-->
-    <div class="container-fluid-1">
-      <div class="col-md-12"><img class="img-responsive" src="img/merchheader.jpg"></div>
-    </div>
+    <div class="jumbotron"><h1>Merchandise</h1></div>
 
     <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('apparel')"> Apparel</button>
-      <button class="btn" onclick="filterSelection('music')"> Music</button>
-      <button class="btn" onclick="filterSelection('posters')"> Posters</button>
-      <button class="btn" onclick="filterSelection('accessories')"> Accessories</button>
+      <button class="btn" onclick="filterSelection('all')">Show all</button>
+      <button class="btn" onclick="filterSelection('apparel')">Apparel</button>
+      <button class="btn" onclick="filterSelection('music')">Music</button>
+      <button class="btn" onclick="filterSelection('posters')">Posters</button>
+      <button class="btn" onclick="filterSelection('accessories')">Accessories</button>
     </div>
 
     <div class="merch">
       <div class="container-fluid">
-        <div class="filterDiv apparel"><a href="productpage_dragon.html"><img class="img-responsive" src="img/shirt01.jpg"></a><p>Girl's Dragon t-shirt</p><p>$25.00</p><p style="color:white;">Out of Stock</p></div>
-        <div class="filterDiv apparel"><a href="productpage_opart_fall.html"><img class="img-responsive" src="img/shirt02.jpg"></a><p>Girl's Op-Art Fall 2013 Tour T-shirt</p><p>$25.00</p><p style="color:white;">Out of Stock</p></div>
-        <div class="filterDiv music"><img class="img-responsive" src="img/record01.jpg"><p>Oracular Spectacular Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-        <div class="filterDiv music"><img class="img-responsive" src="img/record02.jpg"><p>MGMT Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-        <div class="filterDiv music"><img class="img-responsive" src="img/record03.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-        <div class="filterDiv music"><img class="img-responsive" src="img/record04.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-        <div class="filterDiv posters"><img class="img-responsive" src="img/poster02.jpg"><p>MGMT 2013 Poster Bundle</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-        <div class="filterDiv posters"><img class="img-responsive" src="img/poster04.jpg"><p>Heart Sweat shirt</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-        <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories01.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-        <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories02.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-        <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories03.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-        </div>
+        <div class="filterDiv apparel"><a href="productpage.html" target="_blank"><img class="img-responsive" src="img/shirt01.jpg"></a><p>Lyrics Crop Top + Download</p><p>$25.00</p><p style="color:white;">Out of Stock</p></div>
+        <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt02.jpg"><p>Face T-shirt</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv music"><img class="img-responsive" src="img/record01.jpg"><p>The River Single</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv music"><img class="img-responsive" src="img/record02.jpg"><p>The Seed Single</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv music"><img class="img-responsive" src="img/record03.jpg"><p>Animal Single</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv music"><img class="img-responsive" src="img/record04.jpg"><p>Infections of a Different Kind Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv posters"><img class="img-responsive" src="img/poster01.jpg"><p>North American Tour Poster</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv posters"><img class="img-responsive" src="img/poster02.jpg"><p>Poster Bundle</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv posters"><img class="img-responsive" src="img/poster04.jpg"><p>Poster</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories01.jpg"><p>Bookmart Set</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories02.jpg"><p>Dragon Tote</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories03.jpg"><p>Tree Tote (Black)</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      </div>
     </div>
+
   </div>
 
 <!--Filtered Elements Script-->
   <script>
-    filterSelection("all")
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
 
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("filterDiv");
-      if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
       }
     }
+  }
 
-    function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-          element.className += " " + arr2[i];
-        }
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
       }
     }
+    element.className = arr1.join(" ");
+  }
 
-    function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
-      }
-      element.className = arr1.join(" ");
-    }
-
-    // Add active class to the current button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
+  // Add active class to the current control button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
   </script>
 
 
