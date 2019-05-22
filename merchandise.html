@@ -1,218 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Merchandise</title>
+  <title>Aurora-Merchandise</title>
+</head>
 
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Any special styles for this particular section of the website. -->
+<style>
+  /*jumbotron*/
+  .jumbotron {
+    display: table;
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    background: url(img/merchheader.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    border-radius: 0 !important;
+    min-height: 400px;
+  }
 
-  <style>
-    body {
-      background-color: white;
-    }
+  .filterDiv {
+    float: left;
+    color: #ffffff;
+    width: 470px;
+    line-height: 10px;
+    text-align: center;
+    margin: 0px;
+    display: none;
+  }
 
-    p{
-      color: black;
-    }
+  .show {
+    display: block;
+  }
 
-    .filterDiv {
+  .container {
+    margin-top: 0px;
+    overflow: hidden;
+  }
 
-      float: left;
-      color: #ffffff;
-      width: 470px;
-      line-height: 10px;
+  /* Style the buttons */
+  .btn {
+    border: none;
+    font-size: 17px;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 0 !important;
+  }
 
-      text-align: center;
-      margin: 0px;
-      display: none;
-    }
+  .btn:hover {
+    background-color: #ddd;
+  }
 
-    .show {
-      display: block;
-    }
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
 
-    .container {
-      margin-top: 0px;
-      overflow: hidden;
-    }
+  .container-fluid div {
+    background-color: white;
+  }
 
-    /* Style the buttons */
-    .btn {
-      border: none;
-      font-size: 17px;
-      outline: none;
-      padding: 12px 16px;
-      background-color: white;
-      cursor: pointer;
-      border-radius: 0 !important;
-    }
-
-    .btn:hover {
-      background-color: #ddd;
-    }
-
-    .btn.active {
-      background-color: #666;
-      color: white;
-    }
-
-    .container-fluid div {
-
-      background-color: white;
-    }
-
-    .container-fluid-1 div {
-      padding: 0px;
-    }
-  </style>
+  .container-fluid-1 div {
+    padding: 0px;
+  }
+</style>
 
 <body>
-  <!-- GRIDS-->
-  <div class="container-fluid-1">
-    <div class="col-md-12"><img class="img-responsive" src="img/merchheader.jpg"></div>
-  </div>
-
-
-  <div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn" onclick="filterSelection('apparel')"> Apparel</button>
-    <button class="btn" onclick="filterSelection('music')"> Music</button>
-    <button class="btn" onclick="filterSelection('posters')"> Posters</button>
-    <button class="btn" onclick="filterSelection('accessories')"> Accessories</button>
-  </div>
-
-  <div class="merch">
-    <div class="container-fluid">
-      <div class="filterDiv apparel"><a href="productpage_dragon.html"><img class="img-responsive" src="img/shirt01.jpg"></a><p>Girl's Dragon t-shirt</p><p>$25.00</p><p style="color:white;">Out of Stock</p></div>
-      <div class="filterDiv apparel"><a href="productpage_opart_fall.html"><img class="img-responsive" src="img/shirt02.jpg"></a><p>Girl's Op-Art Fall 2013 Tour T-shirt</p><p>$25.00</p><p style="color:white;">Out of Stock</p></div>
-      <div class="filterDiv music"><img class="img-responsive" src="img/record01.jpg"><p>Oracular Spectacular Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-      <div class="filterDiv music"><img class="img-responsive" src="img/record02.jpg"><p>MGMT Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-      <div class="filterDiv music"><img class="img-responsive" src="img/record03.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-      <div class="filterDiv music"><img class="img-responsive" src="img/record04.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-      <div class="filterDiv posters"><img class="img-responsive" src="img/poster02.jpg"><p>MGMT 2013 Poster Bundle</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-      <div class="filterDiv posters"><img class="img-responsive" src="img/poster04.jpg"><p>Heart Sweat shirt</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-      <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories01.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-      <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories02.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
-      <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories03.jpg"><p>Congratulations Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Aurora</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Media.html">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="merchandise.html">Merchandise</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="tour.html">Tours</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="discography.html">Discography</a>
+          </li>
+        </ul>
       </div>
-  </div>
-
-  <!--header-->
-    <div class="header" id="myHeader">
-      <h2>My Header</h2>
-    </div>
-
-
-  <!-- Hamburger menu   -->
-  <nav>
-    <span onclick="openNav()">
-      <div class="hamburgerBun">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-      </div>
-    </span>
   </nav>
 
-  <!-- The navigation overlay -->
-  <div id="myNav" class="overlay">
-    <!-- Button to close the overlay navigation -->
-    <!-- TOOD: Move this link if this works! -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <!-- Overlay content -->
+  <!-- put all main content in here -->
+  <div class="mainContentContainer">
+    <!-- GRIDS-->
+    <div class="jumbotron"><h1>Merchandise</h1></div>
 
-<!-- TODO: new hamburger!
-    <div class="container-fluid overlay-content">
-      <div class="row">
-        <div class="col-md-12"><a href="javascript:void(0)" onclick="closeNav()">&times;</a></div>
-        <div class="col-md-12"><a href="index.html">HOME</a></div>
-        <div class="col-md-12"><a href="index.html">HOME</a></div>
-        <div class="col-md-12"><a href="index.html">HOME</a></div>
-        <div class="col-md-12"><a href="index.html">HOME</a></div>
-        <div class="col-md-12"><a href="index.html">HOME</a></div>
-  -->
+    <div id="myBtnContainer">
+      <button class="btn" onclick="filterSelection('all')">Show all</button>
+      <button class="btn" onclick="filterSelection('apparel')">Apparel</button>
+      <button class="btn" onclick="filterSelection('music')">Music</button>
+      <button class="btn" onclick="filterSelection('posters')">Posters</button>
+      <button class="btn" onclick="filterSelection('accessories')">Accessories</button>
+    </div>
 
-            <div class="overlay-content" onlick="openNav()">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="discography.html">DISCOGRAPHY</a>
-                <a href="merchandise.html">MERCHANDISE</a>
-                <a href="tour.html">TOUR</a>
-                <a href="media.html">MEDIA</a>
-            </div>
+    <div class="merch">
+      <div class="container-fluid">
+        <div class="filterDiv apparel"><a href="productpage.html" target="_blank"><img class="img-responsive" src="img/shirt01.jpg"></a><p>Lyrics Crop Top + Download</p><p>$25.00</p><p style="color:white;">Out of Stock</p></div>
+        <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt02.jpg"><p>Face T-shirt</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv music"><img class="img-responsive" src="img/record01.jpg"><p>The River Single</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv music"><img class="img-responsive" src="img/record02.jpg"><p>The Seed Single</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv music"><img class="img-responsive" src="img/record03.jpg"><p>Animal Single</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv music"><img class="img-responsive" src="img/record04.jpg"><p>Infections of a Different Kind Album</p><p>$25.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv posters"><img class="img-responsive" src="img/poster01.jpg"><p>North American Tour Poster</p><p>$15.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv posters"><img class="img-responsive" src="img/poster02.jpg"><p>Poster Bundle</p><p>$15.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv posters"><img class="img-responsive" src="img/poster04.jpg"><p>Poster</p><p>$15.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories01.jpg"><p>Bookmark Set</p><p>$5.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories02.jpg"><p>Dragon Tote</p><p>$12.00</p><p style="color:Tomato;">Out of Stock</p></div>
+        <div class="filterDiv accessories"><img class="img-responsive" src="img/accessories03.jpg"><p>Tree Tote (Black)</p><p>$15.00</p><p style="color:Tomato;">Out of Stock</p></div>
+      </div>
+    </div>
 
-        <script>
-          /* Open */
-          function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-          }
+  </div>
 
-          /* Close */
-          function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-          }
-        </script>
-
-
-
+<!--Filtered Elements Script-->
   <script>
-    filterSelection("all")
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
 
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("filterDiv");
-      if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
       }
     }
+  }
 
-    function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-          element.className += " " + arr2[i];
-        }
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
       }
     }
+    element.className = arr1.join(" ");
+  }
 
-    function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
-      }
-      element.className = arr1.join(" ");
-    }
-
-    // Add active class to the current button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
+  // Add active class to the current control button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
   </script>
 
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap requirements -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>

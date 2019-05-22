@@ -13,19 +13,33 @@
 
   <!-- Load font awesome icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Aurora</title>
+  <title>Aurora-Merchandise</title>
 </head>
 
 <!-- Any special styles for this particular section of the website. -->
 <style>
-  #myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -300000;
-  }
+  /*jumbotron*/
+  .jumbotron {
+    display: table;
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    background: url(img/merchheader.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    border-radius: 0 !important;
+    min-height: 400px;
+    }
+
+    .container-fluid{
+      display: flex;
+      padding: 0px;
+      margin-top: 50px;
+    }
+
+    h1{
+      color:black;
+    }
+
 </style>
 
 <body>
@@ -60,14 +74,47 @@
 
   <!-- put all main content in here -->
   <div class="mainContentContainer">
-    <video autoplay muted loop id="myVideo">
-      <source src="img/New_England_.mp4" type="video/mp4">
-    </video>
+    <!-- GRIDS-->
+    <div class="jumbotron"><h1 style="color:white">Merchandise</h1></div>
 
-    <div class="center-logo">
-      <img src="img/white_logo.png" style="width:30%;">
-    </div>
-  </div>
+    <!--merch-->
+      <div class="container-fluid">
+        <div class="col-md-4"> <img class="img-responsive" src="img/shirt01.jpg">
+        </div>
+        <div class="col-md-8">
+          <h2 style="color:#A52A2A">Lyrics Crop Top</h2>
+          <hr />
+          <h3>
+            <p> Availability:</p>
+            <p>
+              <font color="green">In stock</font>
+            </p>
+            <p>Code: MG1982</p>
+          </h3>
+          <hr />
+          <p>Lyrics Crop Top design printed on Next Level Ivory/Natural 100% Cotton. See size chart for measurements.</p>
+          <hr>
+          <h2> $25.00 </h2>
+          <p>Size*</p>
+
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Choose an option...
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Small</a></li>
+              <li><a href="#">Medium</a></li>
+              <li><a href="#">Large</a></li>
+            </ul>
+          </div>
+          </p>
+          <!-- Large button group -->
+          <button type="button" onclick="alert('Added to Cart!')">Add to Cart</button>
+          <hr />
+        </div>
+
 
   <!-- Bootstrap requirements -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
