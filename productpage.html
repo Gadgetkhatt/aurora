@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Aurora-Merchandise</title>
+</head>
+
+<!-- Any special styles for this particular section of the website. -->
+<style>
+  /*jumbotron*/
+  .jumbotron {
+    display: table;
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    background: url(img/merchheader.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    border-radius: 0 !important;
+    min-height: 400px;
+    }
+
+    .container-fluid{
+      display: flex;
+      padding: 0px;
+      margin-top: 50px;
+    }
+
+    h1{
+      color:black;
+    }
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Aurora</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Media.html">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="merchandise.html">Merchandise</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="tour.html">Tours</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="discography.html">Discography</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <!-- put all main content in here -->
+  <div class="mainContentContainer">
+    <!-- GRIDS-->
+    <div class="jumbotron"><h1 style="color:white">Merchandise</h1></div>
+
+    <!--merch-->
+      <div class="container-fluid">
+        <div class="col-md-4"> <img class="img-responsive" src="img/shirt01.jpg">
+        </div>
+        <div class="col-md-8">
+          <h2 style="color:#A52A2A">Lyrics Crop Top</h2>
+          <hr />
+          <h3>
+            <p> Availability:</p>
+            <p>
+              <font color="green">In stock</font>
+            </p>
+            <p>Code: MG1982</p>
+          </h3>
+          <hr />
+          <p>Lyrics Crop Top design printed on Next Level Ivory/Natural 100% Cotton. See size chart for measurements.</p>
+          <hr>
+          <h2> $25.00 </h2>
+          <p>Size*</p>
+
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Choose an option...
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Small</a></li>
+              <li><a href="#">Medium</a></li>
+              <li><a href="#">Large</a></li>
+            </ul>
+          </div>
+          </p>
+          <!-- Large button group -->
+          <button type="button" onclick="alert('Added to Cart!')">Add to Cart</button>
+          <hr />
+        </div>
+
+
+  <!-- Bootstrap requirements -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
