@@ -1,209 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" rel="stylesheet">
-  <title>Discography</title>
-
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-  .fullscreen-image {
-      display: table;
-      height: 0;
-      width: 100%;
-      margin: auto;
-      background: url(Images/macayres6.jpg) no-repeat 50% 50%;
-      background-size: cover;
-  }
-
-    body {
-      background-color: white;
-    }
-
-    p {
-      color: black;
-      text-align: center;
-    }
-
-    .center {
-      margin: 0px 0px 0 0;
-      width: 100%;
-      padding: 90px;
-    }
-
-    .header {
-      opacity: 0.6;
-
-      color: black;
-      background: black;
-      width: 100%;
-      top: 0;
-      position: fixed;
-    }
-
-    .flip-card {
-      background-color: transparent;
-      width: 300px;
-      height: 250px;
-      perspective: 1000px;
-      margin-bottom: 80px
-    }
-
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
-    }
-
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(-180deg);
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-    }
-
-    .flip-card-front {
-      background-color: ;
-      color: black;
-    }
-
-    .flip-card-back {
-      background-color: white;
-      color: white;
-      transform: rotateY(180deg);
-    }
-
-    .hamburger {
-      background-color: black;
-    }
-
-h1{
-  position: relative;
-  top: 125px;
-  margin-left: 3%;
-  color:white;
-}
-
-  </style>
+  <title>Aurora-Discography</title>
 </head>
 
+<!-- Any special styles for this particular section of the website. -->
+<style>
+  .jumbotron {
+    display: table;
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    background: url(img/discography.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    border-radius: 0 !important;
+  }
+  .discography-albums {
+    width: 100%;
+    height: 50vh;
+    margin-left: 50px;
+    margin-top:50px;
+  }
+  .discography-albums h1 {
+    font-size: 40px;
+  }
+  .album-details h1 {
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+    font-family: NexaLight;
+  }
+  .album-details p {
+    margin: 6px;
+  }
+  .album-details ul {
+    list-style: none;
+    line-height: 1.2em;
+  }
+</style>
+
 <body>
-
-
-<h1>Discography</h1>
-<div class="fullscreen-image">
-  <img src="img/merchjumboheader.jpg" />
-</div>
-
-  <div class="center">
-    <div class="flip-card col-md-4">
-      <div class="flip-card-inner">
-        <div class="flip-card-front"><img src="img/album01.png" alt="Avatar" style="width:100%;height:100%;">
-          <p>Congratulations / 2009</p>
-          <p>9 songs, 43 minutes</p>
-        </div>
-        <div class="flip-card-back "><iframe src="https://open.spotify.com/embed/album/2elb18efHkfPJPFHivbZm6" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Aurora</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Media.html">Media</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="merchandise.html">Merchandise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tour.html">Tours</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="discography.html">Discography</a>
+        </li>
+      </ul>
     </div>
-
-    <div class="flip-card col-md-4">
-      <div class="flip-card-inner">
-        <div class="flip-card-front"><img src="img/album02.png" alt="Avatar" style="width:100%;height:100%;">
-          <p>MGMT / 2013</p>
-          <p>10 songs, 44 minutes</p>
-        </div>
-        <div class="flip-card-back "><iframe src="https://open.spotify.com/embed/album/6peajO9RM0MtoCWtk2qOLq" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>></div>
-      </div>
-    </div>
-
-    <div class="flip-card col-md-4">
-      <div class="flip-card-inner">
-        <div class="flip-card-front"><img src="img/album03.png" alt="Avatar" style="width:100%;height:100%;">
-          <p>Little Dark Age / 2018</p>
-          <p>10 songs, 44 minutes</p>
-        </div>
-        <div class="flip-card-back"><iframe src="https://open.spotify.com/embed/album/76BccmMQWAMeBZe0foO9Qd" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>></div>
-      </div>
-    </div>
-
-    <div class="flip-card col-md-4">
-      <div class="flip-card-inner">
-        <div class="flip-card-front"><img src="img/album04.png" alt="Avatar" style="width:100%;height:100%;">
-          <p>Oracular Spectacular / 2007</p>
-          <p>10 songs, 40 minutes</p>
-        </div>
-        <div class="flip-card-back "><iframe src="https://open.spotify.com/embed/album/2x1DAVLPdr3OCvhiL5rhbe" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>></div>
-      </div>
-    </div>
-  </div>
-
-  <!--header
-  <div class="header" id="myHeader">
-    <h2>My Header</h2>
-  </div>
-
-
-  <!-- Hamburger menu -->
-  <nav>
-    <span onclick="openNav()">
-      <div class="hamburgerBun">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-      </div>
-    </span>
   </nav>
 
-  <!-- The navigation overlay -->
-  <div id="myNav" class="overlay">
+  <!-- put all main content in here -->
+  <div class="mainContentContainer">
 
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="jumbotron">
+      <h1>Discography</h1>
+    </div>
 
-    <!-- Overlay content -->
-    <div class="overlay-content" onlick="openNav()">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="discography.html">DISCOGRAPHY</a>
-      <a href="merchandise.html">MERCHANDISE</a>
-      <a href="tour.html">TOUR</a>
-      <a href="media.html">MEDIA</a>
+    <!-- first album -->
+        <div class="discography-albums">
+        <div class="flip-card" style="float:left">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/album05.png" alt="Aurora Album" style="width:250px;height:250px;">
+            </div>
+            <div class="flip-card-back">
+              <iframe src="https://open.spotify.com/embed/album/4UhQpTgI2pkCsupFhjPggN" width="250" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="album-details">
+          <h1 style="color:black">All My Demons Greeting Me as a Friend</h1>
+          <p style="font-family:NexaLight;">By Aurora</p>
+          <p style="font-family:NexaLight;">2016 • 11 songs, 46 minutes</p>
+          <ul>
+            <li>1. Runaway| 4:08</li>
+            <li>2. Conqueror | 3:27</li>
+            <li>3. Running with the Wolves | 3:14</li>
+            <li>4. Lucky | 4:04</li>
+            <li>5. Winterbird | 4:07</li>
+            <li>6. I went too far | 3:27</li>
+            <li>7. Through the eyes of a Child | 4:34</li>
+            <li>8. Murder song | 3:43</li>
+            <li>9. Home | 3:20</li>
+            <li>10. Under the Water | 3:32</li>
+            <li>11. Black Water Lillies | 4:24</li>
+          </ul>
+        </div>
+      </div>
+
+<!-- second album -->
+    <div class="discography-albums">
+    <div class="flip-card" style="float:left">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/album01.png" alt="Aurora Album" style="width:250px;height:250px;">
+        </div>
+        <div class="flip-card-back">
+          <iframe src="https://open.spotify.com/embed/album/2elb18efHkfPJPFHivbZm6" width="250" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="album-details">
+      <h1 style="color:black">Infections of a Different Kind</h1>
+      <p style="font-family:NexaLight;">By Aurora</p>
+      <p style="font-family:NexaLight;">2018 • 8 songs, 35 minutes</p>
+      <ul>
+        <li>1. Queendom| 2:17</li>
+        <li>2. Forgotten Love | 2:17</li>
+        <li>3. Gentle Earthquakes | 2:17</li>
+        <li>4. All is Soft Inside | 2:17</li>
+        <li>5. It happened Quiet | 2:17</li>
+        <li>6. Churchyard | 2:17</li>
+        <li>7. Soft Universe | 2:17</li>
+        <li>8. Infections of a Different Kind | 2:17</li>
+      </ul>
     </div>
   </div>
 
+  <!-- third album -->
+      <div class="discography-albums">
+      <div class="flip-card" style="float:left">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/album02.png" alt="Aurora Album" style="width:250px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+          <iframe src="https://open.spotify.com/embed/album/6peajO9RM0MtoCWtk2qOLq" width="250" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="album-details">
+        <h1 style="color:black">The River</h1>
+        <p style="font-family:NexaLight;">By Aurora</p>
+        <p style="font-family:NexaLight;">2019 • 1 song, 35.37 minutes</p>
+        <ul>
+          <li>1. The River | 3:37</li>
+        </ul>
+      </div>
+    </div>
 
-  <script>
-    /* Open */
-    function openNav() {
-      document.getElementById("myNav").style.height = "100%";
-    }
+    <!-- fourth album -->
+        <div class="discography-albums">
+        <div class="flip-card" style="float:left">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/album03.png" alt="Aurora Album" style="width:250px;height:250px;">
+            </div>
+            <div class="flip-card-back">
+            <iframe src="https://open.spotify.com/embed/album/76BccmMQWAMeBZe0foO9Qd" width="250" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="album-details">
+          <h1 style="color:black">The Seed</h1>
+          <p style="font-family:NexaLight;">By Aurora</p>
+          <p style="font-family:NexaLight;">2019 • 1 song, 4.26 minutes</p>
+          <ul>
+            <li>1. The Seed | 4:26</li>
+          </ul>
+        </div>
+      </div>
 
-    /* Close */
-    function closeNav() {
-      document.getElementById("myNav").style.height = "0%";
-    }
-  </script>
+      <!-- fifth album -->
+          <div class="discography-albums">
+          <div class="flip-card" style="float:left">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/album04.png" alt="Aurora Album" style="width:250px;height:250px;">
+              </div>
+              <div class="flip-card-back">
+                <iframe src="https://open.spotify.com/embed/album/2x1DAVLPdr3OCvhiL5rhbe" width="250" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="album-details">
+            <h1 style="color:black">Animal</h1>
+            <p style="font-family:NexaLight;">By Aurora</p>
+            <p style="font-family:NexaLight;">2019 • 1 songs, 3.35 minutes</p>
+            <ul>
+              <li>1. Animal | 3:35</li>
+            </ul>
+          </div>
+        </div>
 
+        </div>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-
+        <!-- Bootstrap requirements -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
